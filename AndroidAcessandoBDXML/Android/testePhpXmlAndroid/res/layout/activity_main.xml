@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnProcessar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnProcessar"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="25dp"
+        android:text="Sao Paulo" />
+
+    <TextView
+        android:id="@+id/txtRJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSP"
+        android:layout_below="@+id/txtSP"
+        android:layout_marginTop="25dp"
+        android:text="Rio de Janeiro" />
+
+    <TextView
+        android:id="@+id/txtSituacaoSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSP"
+        android:layout_alignBottom="@+id/txtSP"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="64dp"
+        android:text="Situacao" />
+
+    <TextView
+        android:id="@+id/txtSituacaoRJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtBA"
+        android:layout_alignLeft="@+id/txtSituacaoSP"
+        android:text="Situacao" />
+
+    <TextView
+        android:id="@+id/txtBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtRJ"
+        android:layout_below="@+id/txtRJ"
+        android:layout_marginTop="22dp"
+        android:text="Bahia" />
+
+    <TextView
+        android:id="@+id/txtSituacaoBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBA"
+        android:layout_alignBottom="@+id/txtBA"
+        android:layout_alignLeft="@+id/txtSituacaoRJ"
+        android:text="Situacao" />
+
+</RelativeLayout>

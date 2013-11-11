@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<estados>
+   <estado>
+      <nome>Sao Paulo</nome>
+      <situacao>verde</situacao>
+   </estado>
+   <estado>
+      <nome>Brasilia</nome>
+      <situacao>amarelo</situacao>
+   </estado>
+   <estado>
+      <nome>Rio de Janeiro</nome>
+      <situacao>vermelho</situacao>
+   </estado>
+</estados>

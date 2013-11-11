@@ -1,0 +1,16 @@
+--Cria Esquema utilizado
+CREATE SCHEMA `0001_XML_Manipulacao_Android_e_PHP` ; 
+
+--Cria Tabela ESTADOS 
+CREATE  TABLE `0001_XML_Manipulacao_Android_e_PHP`.`estados` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `nome` VARCHAR(45) NULL ,
+  `situacao` VARCHAR(45) NULL ,
+  PRIMARY KEY (`id`) );
+
+--Popula dados na tabela ESTADOS
+INSERT INTO `0001_xml_manipulacao_android_e_php`.`estados` (`nome`, `situacao`) VALUES ('Sao Paulo', 'Vermelho');
+INSERT INTO `0001_xml_manipulacao_android_e_php`.`estados` (`nome`, `situacao`) VALUES ('Bahia', 'Verde');
+INSERT INTO `0001_xml_manipulacao_android_e_php`.`estados` (`nome`, `situacao`) VALUES ('Rio de Janeiro', 'Amarelo');
+
+
